@@ -34,6 +34,7 @@ The following Postman Collection file has been provided:
 **Pic-N-Thought APIs.postman_collection.json**
 
 #### Screenshots ####
+```
 - **DynamoDB** 
    DynamoDB_Table.png
    DynamoDB_Index.png
@@ -74,7 +75,7 @@ The following Postman Collection file has been provided:
    Update_the_PnT.png    <-- Update the Pic-N-Thought
    Home_after_Updating_PnT.png  <-- Home page after the update
    Home_after_Delete.png   <-- Home page after delete
-
+```
 * * *
 
 #### Config.ts ####
