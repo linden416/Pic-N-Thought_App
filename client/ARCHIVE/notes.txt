@@ -1,0 +1,118 @@
+              <Grid.Column width={1} verticalAlign="middle">
+                <Checkbox
+                  onChange={() => this.onTodoCheck(pos)}
+                  checked={todo.done}
+                />
+              </Grid.Column>
+
+              <Grid.Column width={10} verticalAlign="middle">
+              {/* todo.name */}
+              <Button
+                  icon
+                  bordered={true}
+                  onClick={() => this.onMoodSet(todo.todoId)}>
+                  <Icon name="smile outline" size="big"  />
+                </Button>
+                <Button
+                  icon
+                  bordered={true}
+                  onClick={() => this.onMoodSet(todo.todoId)}>
+                  <Icon name="meh outline" size="big" disabled={true} />
+                </Button>
+                <Button
+                  icon
+                  bordered={true}
+                  onClick={() => this.onMoodSet(todo.todoId)}>
+                  <Icon name="frown outline" size="big" disabled={true} />
+                </Button>
+             </Grid.Column>
+
+
+//------------------------------------
+  renderCreateTodoInput() {
+    return (
+      <Grid.Row>
+        <Grid.Column width={3}>
+          <Input
+            action={{
+              color: 'teal',
+              labelPosition: 'left',
+              icon: 'add',
+              content: 'New Thought',
+              onClick: this.onTodoCreate
+            }}
+            fluid
+            actionPosition="left"
+            placeholder="Enter a thought"
+            onChange={this.handleNameChange}/>
+          
+    <Input
+    action={{
+      color: 'red',
+      labelPosition: 'left',
+      icon: 'add',
+      content: 'Add New Pic-N-Thought',
+      onClick: this.onAddButtonClick
+    }}
+    actionPosition='left'
+    placeholder='Click to add a new Picture and Thought'
+    onChange={this.handleNameChange}/>
+    
+
+        </Grid.Column>
+        <Grid.Column width={16}>
+          <Divider />
+        </Grid.Column>
+      </Grid.Row>
+    )
+  }
+
+
+===================================
+{
+  "pntId": "12345",
+  "createDt": "2020-06-16T09:00:00.000Z",
+  "userId": "google-oauth2|108861580645825457338",
+  "thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae orci eu tellus euismod pulvinar id eu est. Duis viverra nisi mi, et ornare enim venenatis quis. Aenean sodales eu enim non dapibus. In hac habitasse platea dictumst. Morbi et ipsum a lorem pellentesque facilisis. Donec laoreet nibh elementum mattis.",
+  "mood": "meh",
+  "attachmentUrl": "https://serverless-todo-images-s3bucket-dev.s3.amazonaws.com/f0c819cc-99d6-4ea0-ab8a-be51149bea27"
+}
+
+==================================
+
+App.tsx
+  generateCurrentPage() {
+    if (!this.props.auth.isAuthenticated()) {
+      return <LogIn auth={this.props.auth} />
+    }
+
+    return (
+      <Switch>
+        <Route
+          path="/"
+          exact
+          render={props => {
+            return <Todos {...props} auth={this.props.auth} />
+          }}
+        />
+
+        <Route
+          path="/todos/add"
+          exact
+          render={props => {
+            return <AddPicNThought {...props} auth={this.props.auth} />
+          }}
+        />
+
+        <Route
+          path="/todos/:todoId/edit"
+          exact
+          render={props => {
+            return <EditTodo {...props} auth={this.props.auth} />
+          }}
+        />
+
+        <Route component={NotFound} />
+      </Switch>
+    )
+  }

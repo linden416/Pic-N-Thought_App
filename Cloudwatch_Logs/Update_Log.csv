@@ -1,0 +1,50 @@
+timestamp,message
+1592513848466,"START RequestId: f76d678d-0adc-4d73-8354-c388960264fd Version: $LATEST
+"
+1592513848484,"2020-06-18T20:57:28.483Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	updatePnT fxn
+"
+1592513848486,"{""name"":""upatePicNThought"",""resource"":""/pnts/{pntId}"",""path"":""/pnts/99783f00-233a-4392-a034-62b229547385"",""httpMethod"":""PATCH"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""br, gzip, deflate"",""Accept-Language"":""en-us"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""content-type"":""application/json"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""Via"":""2.0 0feafb9618e9aefaa57a3e39f23cbe38.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""exmQNIRXtOHH89PHdKeHpU1MFLM7fZYNBBuJmbf9ysTXJKFoS6HNSA=="",""X-Amzn-Trace-Id"":""Root=1-5eebd537-6feff7431a2bffd18c8b92eb"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.142"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""br, gzip, deflate""],""Accept-Language"":[""en-us""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""content-type"":[""application/json""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15""],""Via"":[""2.0 0feafb9618e9aefaa57a3e39f23cbe38.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""exmQNIRXtOHH89PHdKeHpU1MFLM7fZYNBBuJmbf9ysTXJKFoS6HNSA==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd537-6feff7431a2bffd18c8b92eb""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.142""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":{""pntId"":""99783f00-233a-4392-a034-62b229547385""},""stageVariables"":null,""requestContext"":{""resourceId"":""a0hlv9"",""authorizer"":{""principalId"":""google-oauth2|108861580645825457338"",""integrationLatency"":335},""resourcePath"":""/pnts/{pntId}"",""httpMethod"":""PATCH"",""extendedRequestId"":""OV5ApGp0oAMFTqw="",""requestTime"":""18/Jun/2020:20:57:27 +0000"",""path"":""/dev/pnts/99783f00-233a-4392-a034-62b229547385"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592513847213,""requestId"":""a2faf8a0-fd45-47ba-85f6-a8de8c28092a"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":""{\""thought\"":\""Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled...\
+\
+But ESPN has been airing the Korean Baseball league on a daily basis!\"",\""mood\"":\""smile\"",\""createdDt\"":\""Thu Jun 18 2020 16:47:05\""}"",""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592513848487,"2020-06-18T20:57:28.487Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	UserId:  google-oauth2|108861580645825457338
+"
+1592513848488,"2020-06-18T20:57:28.487Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	db_access.updPnT
+"
+1592513848488,"2020-06-18T20:57:28.488Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Update Pic-N-Thoughts, pntId:  99783f00-233a-4392-a034-62b229547385
+"
+1592513848488,"2020-06-18T20:57:28.488Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Query Pic-N-Thought
+"
+1592513848488,"2020-06-18T20:57:28.488Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	db_access.getPnT
+"
+1592513848488,"2020-06-18T20:57:28.488Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Query Todo filter by pntId:  99783f00-233a-4392-a034-62b229547385
+"
+1592513848488,"2020-06-18T20:57:28.488Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Key:  google-oauth2|108861580645825457338 99783f00-233a-4392-a034-62b229547385
+"
+1592513848585,"2020-06-18T20:57:28.585Z	f76d678d-0adc-4d73-8354-c388960264fd	ERROR	(node:7) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+"
+1592513848620,"{""name"":""db_access_Logger"",""Items"":[{""mood"":""frown"",""pntId"":""99783f00-233a-4392-a034-62b229547385"",""createdDt"":""Thu Jun 18 2020 16:47:05"",""thought"":""Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled..."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/89c264a5-fe50-4408-a9cc-233378c00bba""}],""Count"":1,""ScannedCount"":1,""level"":""info"",""message"":""getPnT Q Result""}
+"
+1592513848620,"{""name"":""db_access_Logger"",""mood"":""frown"",""pntId"":""99783f00-233a-4392-a034-62b229547385"",""createdDt"":""Thu Jun 18 2020 16:47:05"",""thought"":""Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled..."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/89c264a5-fe50-4408-a9cc-233378c00bba"",""level"":""info"",""message"":""Item: ""}
+"
+1592513848622,"2020-06-18T20:57:28.622Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Get PnT:  {
+  mood: 'frown',
+  pntId: '99783f00-233a-4392-a034-62b229547385',
+  createdDt: 'Thu Jun 18 2020 16:47:05',
+  thought: 'Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled...',
+  userId: 'google-oauth2|108861580645825457338',
+  attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/89c264a5-fe50-4408-a9cc-233378c00bba'
+}
+"
+1592513848622,"2020-06-18T20:57:28.622Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Key:  google-oauth2|108861580645825457338 Thu Jun 18 2020 16:47:05
+"
+1592513848650,"2020-06-18T20:57:28.650Z	f76d678d-0adc-4d73-8354-c388960264fd	ERROR	[winston] Unknown logger level: Updated
+"
+1592513848650,"2020-06-18T20:57:28.650Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Ok
+"
+1592513848650,"2020-06-18T20:57:28.650Z	f76d678d-0adc-4d73-8354-c388960264fd	INFO	Success 200
+"
+1592513848652,"END RequestId: f76d678d-0adc-4d73-8354-c388960264fd
+"
+1592513848652,"REPORT RequestId: f76d678d-0adc-4d73-8354-c388960264fd	Duration: 185.58 ms	Billed Duration: 200 ms	Memory Size: 1024 MB	Max Memory Used: 145 MB	Init Duration: 694.18 ms	
+"

@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "3f754eb1-8e78-45fd-8d9e-0b8ace414cc7",
+		"name": "Pic-N-Thought APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Pic-N-Thoughts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{authToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Pic-N-Thought",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{authToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"thought\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae orci eu tellus euismod pulvinar id eu est. Duis viverra nisi mi, et ornare enim venenatis quis. Aenean sodales eu enim non dapibus. In hac habitasse platea dictumst. Morbi et ipsum a lorem pellentesque facilisis. Donec laoreet nibh elementum mattis.\",\n\t\"createDt\": \"2020-06-16T15:20:35.930Z\",\n\t\"mood\": \"meh\"\n}"
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Pic-N-Thought Invalid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{authToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"thunk\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae orci eu tellus euismod pulvinar id eu est. Duis viverra nisi mi, et ornare enim venenatis quis. Aenean sodales eu enim non dapibus. In hac habitasse platea dictumst. Morbi et ipsum a lorem pellentesque facilisis. Donec laoreet nibh elementum mattis.\",\n\t\"createDt\": \"2020-06-16T15:20:35.930Z\",\n\t\"mood\": \"meh\"\n}"
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Pic-N-Thought",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{authToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"thought\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae orci eu tellus euismod pulvinar id eu est. Duis viverra nisi mi, et ornare enim venenatis quis. Aenean sodales eu enim non dapibus. In hac habitasse platea dictumst. Morbi et ipsum a lorem pellentesque facilisis. Donec laoreet nibh elementum mattis.\",\n\t\"createDt\": \"Thu Jun 18 2020 09:53:37\",\n\t\"mood\": \"meh\"\n}"
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts/1eca68dd-2077-4f2f-a6db-3301d7e21901",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts",
+						"1eca68dd-2077-4f2f-a6db-3301d7e21901"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Pic-N-Thought Invalid",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{authToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"thought\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae orci eu tellus euismod pulvinar id eu est. Duis viverra nisi mi, et ornare enim venenatis quis. Aenean sodales eu enim non dapibus. In hac habitasse platea dictumst. Morbi et ipsum a lorem pellentesque facilisis. Donec laoreet nibh elementum mattis.\",\n\t\"createDt\": \"Thu Jun 18 2020 09:53:37\",\n\t\"smood\": \"frown\"\n}"
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts/1eca68dd-2077-4f2f-a6db-3301d7e21901",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts",
+						"1eca68dd-2077-4f2f-a6db-3301d7e21901"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pic-N-Thought",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{authToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts/d27d974f-8a9e-4e51-afc7-6c1d4ee62ed1",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts",
+						"d27d974f-8a9e-4e51-afc7-6c1d4ee62ed1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get S3 SignedURL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{authToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts/ceb8685e-af19-457f-9e86-f26ea22adbc2/attachment",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts",
+						"ceb8685e-af19-457f-9e86-f26ea22adbc2",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update PnT with ImageURL",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{authToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Change the world\",\n\t\"dueDate\": \"2019-12-11\",\n\t\"done\": true\n}"
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts/35dd600f-43c2-4649-903c-615e1586a26f",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts",
+						"35dd600f-43c2-4649-903c-615e1586a26f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get A Pic-N-Thought",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{authToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/pnts/ceb8685e-af19-457f-9e86-f26ea22adbc2",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pnts",
+						"ceb8685e-af19-457f-9e86-f26ea22adbc2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2124856e-b7c6-4203-8521-49b02061bad5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b344816e-32a2-40c7-a4f5-e68f64ea249a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a645ed98-1fb7-493a-bf73-f363933f2f42",
+			"key": "apiId",
+			"value": "xc5w3qglll",
+			"type": "string"
+		},
+		{
+			"id": "1aedbfb8-f44e-41d7-9dfc-17c791df6f45",
+			"key": "authToken",
+			"value": "",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

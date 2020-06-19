@@ -1,0 +1,173 @@
+timestamp,message
+1592512641726,"START RequestId: bb8622f5-e736-4b0d-8d11-f7abb63a55d6 Version: $LATEST
+"
+1592512641729,"2020-06-18T20:37:21.729Z	bb8622f5-e736-4b0d-8d11-f7abb63a55d6	INFO	getPnTs fxn
+"
+1592512641745,"{""name"":""getPicNThoughts"",""resource"":""/pnts"",""path"":""/pnts"",""httpMethod"":""GET"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""gzip, deflate, br"",""Accept-Language"":""en-US,en;q=0.9"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTIxNjM3Njk3NzA2OTYwMjY4NzEiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMDE0NiwiZXhwIjoxNTkyNTQ2MTQ2LCJhdF9oYXNoIjoiWk1ZYXQyTTRpODF6NmpQSU5vV1lFUSIsIm5vbmNlIjoiQkFhdnFuUWxPQkwtVDZxTk5sQy1md3VfZHhxRFhQLVIifQ.JnbgUge1hwUKUqkQmfz04snoXFSqbtJNutIxfBZpfNxN6OpVAQ5f7qB69S1nyYiNpbpqC3zAfdEGQK3SyGnMQ8-mScrKSe2_2SKtpwPJ02Mz55WhHbC8YRMxQ3Z9AvBzLph71wRPWqFhhgJEKg8Vqo9BT_O6VqTf7SK-dbtZDB7gB0_-LeaRFyAC979yrGybs-Dyg5WtQZ1ORHet18VasfgSLMNNkOlKRrb861BQ9pupGl0ikxpWHnZfLfBri8En3rYY6uQENdUo_tM6ykf8ltZwQF4qEZx0J3pmrCRQiJUnAlq3LvdnZvoQCYjqd-bNFzEpToP1iqTT_54EayPa7w"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""sec-fetch-dest"":""empty"",""sec-fetch-mode"":""cors"",""sec-fetch-site"":""cross-site"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"",""Via"":""2.0 46732229201aa4f609c262fdc081b510.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""SQgDpXiTh42OaeYChOfnLULQZk6i7ZG2mLNj1hoNFAXkE8d3pnQcdg=="",""X-Amzn-Trace-Id"":""Root=1-5eebd080-9080ba00ffd28c8073dfd45c"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.155"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""gzip, deflate, br""],""Accept-Language"":[""en-US,en;q=0.9""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTIxNjM3Njk3NzA2OTYwMjY4NzEiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMDE0NiwiZXhwIjoxNTkyNTQ2MTQ2LCJhdF9oYXNoIjoiWk1ZYXQyTTRpODF6NmpQSU5vV1lFUSIsIm5vbmNlIjoiQkFhdnFuUWxPQkwtVDZxTk5sQy1md3VfZHhxRFhQLVIifQ.JnbgUge1hwUKUqkQmfz04snoXFSqbtJNutIxfBZpfNxN6OpVAQ5f7qB69S1nyYiNpbpqC3zAfdEGQK3SyGnMQ8-mScrKSe2_2SKtpwPJ02Mz55WhHbC8YRMxQ3Z9AvBzLph71wRPWqFhhgJEKg8Vqo9BT_O6VqTf7SK-dbtZDB7gB0_-LeaRFyAC979yrGybs-Dyg5WtQZ1ORHet18VasfgSLMNNkOlKRrb861BQ9pupGl0ikxpWHnZfLfBri8En3rYY6uQENdUo_tM6ykf8ltZwQF4qEZx0J3pmrCRQiJUnAlq3LvdnZvoQCYjqd-bNFzEpToP1iqTT_54EayPa7w""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""sec-fetch-dest"":[""empty""],""sec-fetch-mode"":[""cors""],""sec-fetch-site"":[""cross-site""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36""],""Via"":[""2.0 46732229201aa4f609c262fdc081b510.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""SQgDpXiTh42OaeYChOfnLULQZk6i7ZG2mLNj1hoNFAXkE8d3pnQcdg==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd080-9080ba00ffd28c8073dfd45c""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.155""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":null,""stageVariables"":null,""requestContext"":{""resourceId"":""9ma6rl"",""authorizer"":{""principalId"":""google-oauth2|112163769770696026871"",""integrationLatency"":0},""resourcePath"":""/pnts"",""httpMethod"":""GET"",""extendedRequestId"":""OV2EHH0jIAMFx9A="",""requestTime"":""18/Jun/2020:20:37:20 +0000"",""path"":""/dev/pnts"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592512640620,""requestId"":""7dda8b9f-4543-4490-859a-5e4c171b7292"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":null,""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592512641746,"2020-06-18T20:37:21.746Z	bb8622f5-e736-4b0d-8d11-f7abb63a55d6	INFO	UserId:  google-oauth2|112163769770696026871
+"
+1592512641747,"2020-06-18T20:37:21.746Z	bb8622f5-e736-4b0d-8d11-f7abb63a55d6	INFO	db_access.getPnTs
+"
+1592512641747,"2020-06-18T20:37:21.747Z	bb8622f5-e736-4b0d-8d11-f7abb63a55d6	INFO	Query PnTs filter by userId:  google-oauth2|112163769770696026871
+"
+1592512641830,"2020-06-18T20:37:21.830Z	bb8622f5-e736-4b0d-8d11-f7abb63a55d6	ERROR	(node:7) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+"
+1592512641877,"2020-06-18T20:37:21.877Z	bb8622f5-e736-4b0d-8d11-f7abb63a55d6	INFO	Get PnTs:  [
+  {
+    mood: 'smile',
+    pntId: '0e7a9009-7272-4ec4-9f03-a31529154c87',
+    createdDt: 'Thu Jun 18 2020 09:37:16',
+    thought: 'I enjoy and have become accustomed to coffee with toast every morning. This has become a necessity!',
+    userId: 'google-oauth2|112163769770696026871',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/48710532-7e55-416f-b291-72528c99e028'
+  },
+  {
+    mood: 'meh',
+    pntId: '1eca68dd-2077-4f2f-a6db-3301d7e21901',
+    createdDt: 'Thu Jun 18 2020 09:53:37',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/def9c9e1-0a48-402a-bae6-8f82da26a565',
+    thought: 'Our country is struggling...',
+    userId: 'google-oauth2|112163769770696026871'
+  },
+  {
+    mood: 'meh',
+    pntId: '20606415-e042-494e-9fc5-381fb838fdc5',
+    createdDt: 'Thu Jun 18 2020 10:57:51',
+    thought: 'We need someone who can fix the world...',
+    userId: 'google-oauth2|112163769770696026871',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/8c5cfa5c-5ae6-4ce8-a073-a2568be3745f'
+  },
+  {
+    mood: 'frown',
+    pntId: '3822e2d4-09b4-4085-98d3-47cd756928a6',
+    createdDt: 'Thu Jun 18 2020 11:26:41',
+    thought: 'The COVID-19 pandemic has halted the 2020 baseball season indefinitely.',
+    userId: 'google-oauth2|112163769770696026871',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/7742e87e-9e12-47bd-812b-8cc76243e0f9'
+  },
+  {
+    mood: 'smile',
+    pntId: '4d6edfdc-7a08-4f4d-ba68-7aa3a1f0f28a',
+    createdDt: 'Thu Jun 18 2020 11:06:44',
+    thought: ""Keep attending to the world's natural air filters-- plants!"",
+    userId: 'google-oauth2|112163769770696026871',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/3efc5541-8aa5-4d36-895d-1780ab4cbc8b'
+  }
+]
+"
+1592512641877,"{""message"":[{""mood"":""smile"",""pntId"":""0e7a9009-7272-4ec4-9f03-a31529154c87"",""createdDt"":""Thu Jun 18 2020 09:37:16"",""thought"":""I enjoy and have become accustomed to coffee with toast every morning. This has become a necessity!"",""userId"":""google-oauth2|112163769770696026871"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/48710532-7e55-416f-b291-72528c99e028""},{""mood"":""meh"",""pntId"":""1eca68dd-2077-4f2f-a6db-3301d7e21901"",""createdDt"":""Thu Jun 18 2020 09:53:37"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/def9c9e1-0a48-402a-bae6-8f82da26a565"",""thought"":""Our country is struggling..."",""userId"":""google-oauth2|112163769770696026871""},{""mood"":""meh"",""pntId"":""20606415-e042-494e-9fc5-381fb838fdc5"",""createdDt"":""Thu Jun 18 2020 10:57:51"",""thought"":""We need someone who can fix the world..."",""userId"":""google-oauth2|112163769770696026871"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/8c5cfa5c-5ae6-4ce8-a073-a2568be3745f""},{""mood"":""frown"",""pntId"":""3822e2d4-09b4-4085-98d3-47cd756928a6"",""createdDt"":""Thu Jun 18 2020 11:26:41"",""thought"":""The COVID-19 pandemic has halted the 2020 baseball season indefinitely."",""userId"":""google-oauth2|112163769770696026871"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/7742e87e-9e12-47bd-812b-8cc76243e0f9""},{""mood"":""smile"",""pntId"":""4d6edfdc-7a08-4f4d-ba68-7aa3a1f0f28a"",""createdDt"":""Thu Jun 18 2020 11:06:44"",""thought"":""Keep attending to the world's natural air filters-- plants!"",""userId"":""google-oauth2|112163769770696026871"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/3efc5541-8aa5-4d36-895d-1780ab4cbc8b""}],""level"":""info"",""name"":""getPicNThoughts""}
+"
+1592512641877,"2020-06-18T20:37:21.877Z	bb8622f5-e736-4b0d-8d11-f7abb63a55d6	INFO	Success 200
+"
+1592512641879,"END RequestId: bb8622f5-e736-4b0d-8d11-f7abb63a55d6
+"
+1592512641879,"REPORT RequestId: bb8622f5-e736-4b0d-8d11-f7abb63a55d6	Duration: 152.24 ms	Billed Duration: 200 ms	Memory Size: 1024 MB	Max Memory Used: 147 MB	Init Duration: 856.96 ms	
+"
+1592512967353,"START RequestId: aaaf60f3-0d2d-43c0-9880-91763ac7624e Version: $LATEST
+"
+1592512967357,"2020-06-18T20:42:47.357Z	aaaf60f3-0d2d-43c0-9880-91763ac7624e	INFO	getPnTs fxn
+"
+1592512967357,"{""name"":""getPicNThoughts"",""resource"":""/pnts"",""path"":""/pnts"",""httpMethod"":""GET"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""br, gzip, deflate"",""Accept-Language"":""en-us"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""Via"":""2.0 0eb7067b04b6581a3cac621dac7ab959.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""0CbwoYgh46etsMGJVFAjy-v57IspIWGnJBwkowDrc-bNL8_N-cfK5A=="",""X-Amzn-Trace-Id"":""Root=1-5eebd1c7-8407a9be2f2a38fa3d91aeb6"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.86"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""br, gzip, deflate""],""Accept-Language"":[""en-us""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15""],""Via"":[""2.0 0eb7067b04b6581a3cac621dac7ab959.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""0CbwoYgh46etsMGJVFAjy-v57IspIWGnJBwkowDrc-bNL8_N-cfK5A==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd1c7-8407a9be2f2a38fa3d91aeb6""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.86""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":null,""stageVariables"":null,""requestContext"":{""resourceId"":""9ma6rl"",""authorizer"":{""principalId"":""google-oauth2|108861580645825457338"",""integrationLatency"":304},""resourcePath"":""/pnts"",""httpMethod"":""GET"",""extendedRequestId"":""OV23HGKJoAMFfHQ="",""requestTime"":""18/Jun/2020:20:42:47 +0000"",""path"":""/dev/pnts"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592512967027,""requestId"":""1fc110dd-91ea-4362-8dfa-c1a6f577cd0b"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":null,""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592512967357,"2020-06-18T20:42:47.357Z	aaaf60f3-0d2d-43c0-9880-91763ac7624e	INFO	UserId:  google-oauth2|108861580645825457338
+"
+1592512967357,"2020-06-18T20:42:47.357Z	aaaf60f3-0d2d-43c0-9880-91763ac7624e	INFO	db_access.getPnTs
+"
+1592512967357,"2020-06-18T20:42:47.357Z	aaaf60f3-0d2d-43c0-9880-91763ac7624e	INFO	Query PnTs filter by userId:  google-oauth2|108861580645825457338
+"
+1592512967449,"2020-06-18T20:42:47.449Z	aaaf60f3-0d2d-43c0-9880-91763ac7624e	INFO	Get PnTs:  [
+  {
+    mood: 'smile',
+    pntId: 'bb269d0d-a2b9-4e66-a555-aea1299b8a3f',
+    createdDt: 'Thu Jun 18 2020 14:01:17',
+    thought: 'But what I like to do the most is play golf. Golf all day and all night.',
+    userId: 'google-oauth2|108861580645825457338',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/083e8f3d-0723-4915-95bf-c9a45e1e290c'
+  },
+  {
+    mood: 'smile',
+    pntId: 'ffdd64e3-a14b-46ab-bc37-145c76fe44a6',
+    createdDt: 'Thu Jun 18 2020 14:00:00',
+    thought: ""I like the sounds of good jazz guitar. I'd like to learn to play."",
+    userId: 'google-oauth2|108861580645825457338',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/bb498ade-da95-4aab-8c15-5150530a6176'
+  }
+]
+"
+1592512967449,"{""message"":[{""mood"":""smile"",""pntId"":""bb269d0d-a2b9-4e66-a555-aea1299b8a3f"",""createdDt"":""Thu Jun 18 2020 14:01:17"",""thought"":""But what I like to do the most is play golf. Golf all day and all night."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/083e8f3d-0723-4915-95bf-c9a45e1e290c""},{""mood"":""smile"",""pntId"":""ffdd64e3-a14b-46ab-bc37-145c76fe44a6"",""createdDt"":""Thu Jun 18 2020 14:00:00"",""thought"":""I like the sounds of good jazz guitar. I'd like to learn to play."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/bb498ade-da95-4aab-8c15-5150530a6176""}],""level"":""info"",""name"":""getPicNThoughts""}
+"
+1592512967449,"2020-06-18T20:42:47.449Z	aaaf60f3-0d2d-43c0-9880-91763ac7624e	INFO	Success 200
+"
+1592512967450,"END RequestId: aaaf60f3-0d2d-43c0-9880-91763ac7624e
+"
+1592512967450,"REPORT RequestId: aaaf60f3-0d2d-43c0-9880-91763ac7624e	Duration: 93.48 ms	Billed Duration: 100 ms	Memory Size: 1024 MB	Max Memory Used: 147 MB	
+"
+1592513324170,"START RequestId: bd360d7a-9a39-49d4-b2f0-2af9e852cd68 Version: $LATEST
+"
+1592513324174,"2020-06-18T20:48:44.174Z	bd360d7a-9a39-49d4-b2f0-2af9e852cd68	INFO	getPnTs fxn
+"
+1592513324174,"{""name"":""getPicNThoughts"",""resource"":""/pnts"",""path"":""/pnts"",""httpMethod"":""GET"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""br, gzip, deflate"",""Accept-Language"":""en-us"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""Via"":""2.0 3a4361e2c1007be46e48ba14c0942f55.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""t_wMAedoBCjyf_7bs0xskzWlzSlnvgbcyA-vEgh83x2WUEo13G4YLQ=="",""X-Amzn-Trace-Id"":""Root=1-5eebd32b-6359ae0ee055c428411e9ce0"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.79"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""br, gzip, deflate""],""Accept-Language"":[""en-us""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15""],""Via"":[""2.0 3a4361e2c1007be46e48ba14c0942f55.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""t_wMAedoBCjyf_7bs0xskzWlzSlnvgbcyA-vEgh83x2WUEo13G4YLQ==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd32b-6359ae0ee055c428411e9ce0""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.79""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":null,""stageVariables"":null,""requestContext"":{""resourceId"":""9ma6rl"",""authorizer"":{""principalId"":""google-oauth2|108861580645825457338"",""integrationLatency"":278},""resourcePath"":""/pnts"",""httpMethod"":""GET"",""extendedRequestId"":""OV3u3EqpoAMFW3w="",""requestTime"":""18/Jun/2020:20:48:43 +0000"",""path"":""/dev/pnts"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592513323859,""requestId"":""31ff5d1f-722a-4d6c-89e2-9300516f87a3"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":null,""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592513324175,"2020-06-18T20:48:44.174Z	bd360d7a-9a39-49d4-b2f0-2af9e852cd68	INFO	UserId:  google-oauth2|108861580645825457338
+"
+1592513324175,"2020-06-18T20:48:44.174Z	bd360d7a-9a39-49d4-b2f0-2af9e852cd68	INFO	db_access.getPnTs
+"
+1592513324175,"2020-06-18T20:48:44.174Z	bd360d7a-9a39-49d4-b2f0-2af9e852cd68	INFO	Query PnTs filter by userId:  google-oauth2|108861580645825457338
+"
+1592513324253,"2020-06-18T20:48:44.253Z	bd360d7a-9a39-49d4-b2f0-2af9e852cd68	INFO	Get PnTs:  [
+  {
+    mood: 'frown',
+    pntId: '99783f00-233a-4392-a034-62b229547385',
+    createdDt: 'Thu Jun 18 2020 16:47:05',
+    thought: 'Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled...',
+    userId: 'google-oauth2|108861580645825457338',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/89c264a5-fe50-4408-a9cc-233378c00bba'
+  }
+]
+"
+1592513324253,"{""message"":[{""mood"":""frown"",""pntId"":""99783f00-233a-4392-a034-62b229547385"",""createdDt"":""Thu Jun 18 2020 16:47:05"",""thought"":""Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled..."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/89c264a5-fe50-4408-a9cc-233378c00bba""}],""level"":""info"",""name"":""getPicNThoughts""}
+"
+1592513324253,"2020-06-18T20:48:44.253Z	bd360d7a-9a39-49d4-b2f0-2af9e852cd68	INFO	Success 200
+"
+1592513324254,"END RequestId: bd360d7a-9a39-49d4-b2f0-2af9e852cd68
+"
+1592513324254,"REPORT RequestId: bd360d7a-9a39-49d4-b2f0-2af9e852cd68	Duration: 81.25 ms	Billed Duration: 100 ms	Memory Size: 1024 MB	Max Memory Used: 147 MB	
+"
+1592513941937,"START RequestId: d8438c90-e598-44b0-b47a-3728c647b5b4 Version: $LATEST
+"
+1592513941941,"2020-06-18T20:59:01.940Z	d8438c90-e598-44b0-b47a-3728c647b5b4	INFO	getPnTs fxn
+"
+1592513941941,"{""name"":""getPicNThoughts"",""resource"":""/pnts"",""path"":""/pnts"",""httpMethod"":""GET"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""br, gzip, deflate"",""Accept-Language"":""en-us"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""Via"":""2.0 0feafb9618e9aefaa57a3e39f23cbe38.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""FD8DWvAc3fS0UJkXZGUZFgRwox-4wwsdgUxW9EeZvveguLGYOhX8Pw=="",""X-Amzn-Trace-Id"":""Root=1-5eebd595-54f2982e147fc4fa7f96ee63"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.142"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""br, gzip, deflate""],""Accept-Language"":[""en-us""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15""],""Via"":[""2.0 0feafb9618e9aefaa57a3e39f23cbe38.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""FD8DWvAc3fS0UJkXZGUZFgRwox-4wwsdgUxW9EeZvveguLGYOhX8Pw==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd595-54f2982e147fc4fa7f96ee63""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.142""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":null,""stageVariables"":null,""requestContext"":{""resourceId"":""9ma6rl"",""authorizer"":{""principalId"":""google-oauth2|108861580645825457338"",""integrationLatency"":0},""resourcePath"":""/pnts"",""httpMethod"":""GET"",""extendedRequestId"":""OV5PcHVwIAMF2gA="",""requestTime"":""18/Jun/2020:20:59:01 +0000"",""path"":""/dev/pnts"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592513941907,""requestId"":""1797258e-79a1-4906-a8bf-78c11cdd30e0"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":null,""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592513941941,"2020-06-18T20:59:01.941Z	d8438c90-e598-44b0-b47a-3728c647b5b4	INFO	UserId:  google-oauth2|108861580645825457338
+"
+1592513941941,"2020-06-18T20:59:01.941Z	d8438c90-e598-44b0-b47a-3728c647b5b4	INFO	db_access.getPnTs
+"
+1592513941941,"2020-06-18T20:59:01.941Z	d8438c90-e598-44b0-b47a-3728c647b5b4	INFO	Query PnTs filter by userId:  google-oauth2|108861580645825457338
+"
+1592513941969,"2020-06-18T20:59:01.969Z	d8438c90-e598-44b0-b47a-3728c647b5b4	INFO	Get PnTs:  [
+  {
+    mood: 'smile',
+    pntId: '99783f00-233a-4392-a034-62b229547385',
+    createdDt: 'Thu Jun 18 2020 16:47:05',
+    attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/bb8d1014-e16c-4e8b-96f8-db8904221730',
+    thought: 'Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled...
+' +
+      '
+' +
+      'But ESPN has been airing the Korean Baseball league on a daily basis!',
+    userId: 'google-oauth2|108861580645825457338'
+  }
+]
+"
+1592513941969,"{""message"":[{""mood"":""smile"",""pntId"":""99783f00-233a-4392-a034-62b229547385"",""createdDt"":""Thu Jun 18 2020 16:47:05"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/bb8d1014-e16c-4e8b-96f8-db8904221730"",""thought"":""Because of the COVID-19 pandemic, the 2020 baseball season has been indefinitely cancelled...
+
+But ESPN has been airing the Korean Baseball league on a daily basis!"",""userId"":""google-oauth2|108861580645825457338""}],""level"":""info"",""name"":""getPicNThoughts""}
+"
+1592513941969,"2020-06-18T20:59:01.969Z	d8438c90-e598-44b0-b47a-3728c647b5b4	INFO	Success 200
+"
+1592513941970,"END RequestId: d8438c90-e598-44b0-b47a-3728c647b5b4
+"
+1592513941970,"REPORT RequestId: d8438c90-e598-44b0-b47a-3728c647b5b4	Duration: 30.26 ms	Billed Duration: 100 ms	Memory Size: 1024 MB	Max Memory Used: 147 MB	
+"

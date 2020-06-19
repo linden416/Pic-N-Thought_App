@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "group",
+  "type": "object",
+  "properties": {
+    "thought": {
+      "type": "string"
+    },
+    "mood": {
+      "type": "string"
+    },
+    "createdDt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "thought",
+    "mood",
+    "createdDt"
+  ],
+  "additionalProperties": false
+}

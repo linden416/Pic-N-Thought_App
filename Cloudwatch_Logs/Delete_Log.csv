@@ -1,0 +1,132 @@
+timestamp,message
+1592512781794,"START RequestId: 6315a843-be52-422e-bd80-f4713bd12b14 Version: $LATEST
+"
+1592512781813,"2020-06-18T20:39:41.813Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	deletePnT fxn
+"
+1592512781815,"{""name"":""deletePicNThought"",""resource"":""/pnts/{pntId}"",""path"":""/pnts/1eca68dd-2077-4f2f-a6db-3301d7e21901"",""httpMethod"":""DELETE"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""gzip, deflate, br"",""Accept-Language"":""en-US,en;q=0.9"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTIxNjM3Njk3NzA2OTYwMjY4NzEiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMDE0NiwiZXhwIjoxNTkyNTQ2MTQ2LCJhdF9oYXNoIjoiWk1ZYXQyTTRpODF6NmpQSU5vV1lFUSIsIm5vbmNlIjoiQkFhdnFuUWxPQkwtVDZxTk5sQy1md3VfZHhxRFhQLVIifQ.JnbgUge1hwUKUqkQmfz04snoXFSqbtJNutIxfBZpfNxN6OpVAQ5f7qB69S1nyYiNpbpqC3zAfdEGQK3SyGnMQ8-mScrKSe2_2SKtpwPJ02Mz55WhHbC8YRMxQ3Z9AvBzLph71wRPWqFhhgJEKg8Vqo9BT_O6VqTf7SK-dbtZDB7gB0_-LeaRFyAC979yrGybs-Dyg5WtQZ1ORHet18VasfgSLMNNkOlKRrb861BQ9pupGl0ikxpWHnZfLfBri8En3rYY6uQENdUo_tM6ykf8ltZwQF4qEZx0J3pmrCRQiJUnAlq3LvdnZvoQCYjqd-bNFzEpToP1iqTT_54EayPa7w"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""sec-fetch-dest"":""empty"",""sec-fetch-mode"":""cors"",""sec-fetch-site"":""cross-site"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"",""Via"":""2.0 46732229201aa4f609c262fdc081b510.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""wTIMf2gtk3a32_oHKS7dOP1txOwn9MZ4CGbxeIvFQGj6aGMV4cwPDA=="",""X-Amzn-Trace-Id"":""Root=1-5eebd10c-038eca8363d2f929fb78203e"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.144"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""gzip, deflate, br""],""Accept-Language"":[""en-US,en;q=0.9""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTIxNjM3Njk3NzA2OTYwMjY4NzEiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMDE0NiwiZXhwIjoxNTkyNTQ2MTQ2LCJhdF9oYXNoIjoiWk1ZYXQyTTRpODF6NmpQSU5vV1lFUSIsIm5vbmNlIjoiQkFhdnFuUWxPQkwtVDZxTk5sQy1md3VfZHhxRFhQLVIifQ.JnbgUge1hwUKUqkQmfz04snoXFSqbtJNutIxfBZpfNxN6OpVAQ5f7qB69S1nyYiNpbpqC3zAfdEGQK3SyGnMQ8-mScrKSe2_2SKtpwPJ02Mz55WhHbC8YRMxQ3Z9AvBzLph71wRPWqFhhgJEKg8Vqo9BT_O6VqTf7SK-dbtZDB7gB0_-LeaRFyAC979yrGybs-Dyg5WtQZ1ORHet18VasfgSLMNNkOlKRrb861BQ9pupGl0ikxpWHnZfLfBri8En3rYY6uQENdUo_tM6ykf8ltZwQF4qEZx0J3pmrCRQiJUnAlq3LvdnZvoQCYjqd-bNFzEpToP1iqTT_54EayPa7w""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""sec-fetch-dest"":[""empty""],""sec-fetch-mode"":[""cors""],""sec-fetch-site"":[""cross-site""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36""],""Via"":[""2.0 46732229201aa4f609c262fdc081b510.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""wTIMf2gtk3a32_oHKS7dOP1txOwn9MZ4CGbxeIvFQGj6aGMV4cwPDA==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd10c-038eca8363d2f929fb78203e""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.144""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":{""pntId"":""1eca68dd-2077-4f2f-a6db-3301d7e21901""},""stageVariables"":null,""requestContext"":{""resourceId"":""a0hlv9"",""authorizer"":{""principalId"":""google-oauth2|112163769770696026871"",""integrationLatency"":386},""resourcePath"":""/pnts/{pntId}"",""httpMethod"":""DELETE"",""extendedRequestId"":""OV2Z9Fw1oAMFl2A="",""requestTime"":""18/Jun/2020:20:39:40 +0000"",""path"":""/dev/pnts/1eca68dd-2077-4f2f-a6db-3301d7e21901"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592512780411,""requestId"":""27cbe01d-571a-4f48-aec7-da21ec37b85e"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":null,""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592512781817,"2020-06-18T20:39:41.816Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	UserId:  google-oauth2|112163769770696026871
+"
+1592512781817,"2020-06-18T20:39:41.817Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	db_access.getPnT
+"
+1592512781817,"2020-06-18T20:39:41.817Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Delete Pic-N-Thought:  1eca68dd-2077-4f2f-a6db-3301d7e21901
+"
+1592512781817,"2020-06-18T20:39:41.817Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Query Pic-N-Thought
+"
+1592512781817,"2020-06-18T20:39:41.817Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	db_access.getPnT
+"
+1592512781817,"2020-06-18T20:39:41.817Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Query Todo filter by pntId:  1eca68dd-2077-4f2f-a6db-3301d7e21901
+"
+1592512781817,"2020-06-18T20:39:41.817Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Key:  google-oauth2|112163769770696026871 1eca68dd-2077-4f2f-a6db-3301d7e21901
+"
+1592512781919,"2020-06-18T20:39:41.919Z	6315a843-be52-422e-bd80-f4713bd12b14	ERROR	(node:8) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+"
+1592512781968,"{""name"":""db_access_Logger"",""Items"":[{""mood"":""meh"",""pntId"":""1eca68dd-2077-4f2f-a6db-3301d7e21901"",""createdDt"":""Thu Jun 18 2020 09:53:37"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/def9c9e1-0a48-402a-bae6-8f82da26a565"",""thought"":""Our country is struggling..."",""userId"":""google-oauth2|112163769770696026871""}],""Count"":1,""ScannedCount"":1,""level"":""info"",""message"":""getPnT Q Result""}
+"
+1592512781968,"{""name"":""db_access_Logger"",""mood"":""meh"",""pntId"":""1eca68dd-2077-4f2f-a6db-3301d7e21901"",""createdDt"":""Thu Jun 18 2020 09:53:37"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/def9c9e1-0a48-402a-bae6-8f82da26a565"",""thought"":""Our country is struggling..."",""userId"":""google-oauth2|112163769770696026871"",""level"":""info"",""message"":""Item: ""}
+"
+1592512781970,"2020-06-18T20:39:41.970Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Get PnT:  {
+  mood: 'meh',
+  pntId: '1eca68dd-2077-4f2f-a6db-3301d7e21901',
+  createdDt: 'Thu Jun 18 2020 09:53:37',
+  attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/def9c9e1-0a48-402a-bae6-8f82da26a565',
+  thought: 'Our country is struggling...',
+  userId: 'google-oauth2|112163769770696026871'
+}
+"
+1592512781970,"2020-06-18T20:39:41.970Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Key:  google-oauth2|112163769770696026871 Thu Jun 18 2020 09:53:37
+"
+1592512781998,"2020-06-18T20:39:41.998Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Ok  {}
+"
+1592512781998,"2020-06-18T20:39:41.998Z	6315a843-be52-422e-bd80-f4713bd12b14	INFO	Success 200
+"
+1592512782000,"END RequestId: 6315a843-be52-422e-bd80-f4713bd12b14
+"
+1592512782000,"REPORT RequestId: 6315a843-be52-422e-bd80-f4713bd12b14	Duration: 205.52 ms	Billed Duration: 300 ms	Memory Size: 1024 MB	Max Memory Used: 145 MB	Init Duration: 697.35 ms	
+"
+1592513080091,"START RequestId: 2a21006d-2a18-483f-b379-75bc8d84ccc6 Version: $LATEST
+"
+1592513080095,"2020-06-18T20:44:40.095Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	deletePnT fxn
+"
+1592513080095,"{""name"":""deletePicNThought"",""resource"":""/pnts/{pntId}"",""path"":""/pnts/bb269d0d-a2b9-4e66-a555-aea1299b8a3f"",""httpMethod"":""DELETE"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""br, gzip, deflate"",""Accept-Language"":""en-us"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""Via"":""2.0 0eb7067b04b6581a3cac621dac7ab959.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""39JQ9mePqMDblriKypMnVRVABk8FkGZPtNpS7IjOJszeqjAtZCFi-A=="",""X-Amzn-Trace-Id"":""Root=1-5eebd238-d2e3433c57552559d11d7a52"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.139"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""br, gzip, deflate""],""Accept-Language"":[""en-us""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15""],""Via"":[""2.0 0eb7067b04b6581a3cac621dac7ab959.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""39JQ9mePqMDblriKypMnVRVABk8FkGZPtNpS7IjOJszeqjAtZCFi-A==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd238-d2e3433c57552559d11d7a52""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.139""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":{""pntId"":""bb269d0d-a2b9-4e66-a555-aea1299b8a3f""},""stageVariables"":null,""requestContext"":{""resourceId"":""a0hlv9"",""authorizer"":{""principalId"":""google-oauth2|108861580645825457338"",""integrationLatency"":0},""resourcePath"":""/pnts/{pntId}"",""httpMethod"":""DELETE"",""extendedRequestId"":""OV3IxGP1IAMFkNA="",""requestTime"":""18/Jun/2020:20:44:40 +0000"",""path"":""/dev/pnts/bb269d0d-a2b9-4e66-a555-aea1299b8a3f"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592513080058,""requestId"":""343143f5-1730-4e09-b3aa-b0c98d5b4f29"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":null,""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592513080096,"2020-06-18T20:44:40.096Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	UserId:  google-oauth2|108861580645825457338
+"
+1592513080096,"2020-06-18T20:44:40.096Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	db_access.getPnT
+"
+1592513080096,"2020-06-18T20:44:40.096Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Delete Pic-N-Thought:  bb269d0d-a2b9-4e66-a555-aea1299b8a3f
+"
+1592513080096,"2020-06-18T20:44:40.096Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Query Pic-N-Thought
+"
+1592513080096,"2020-06-18T20:44:40.096Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	db_access.getPnT
+"
+1592513080096,"2020-06-18T20:44:40.096Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Query Todo filter by pntId:  bb269d0d-a2b9-4e66-a555-aea1299b8a3f
+"
+1592513080096,"2020-06-18T20:44:40.096Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Key:  google-oauth2|108861580645825457338 bb269d0d-a2b9-4e66-a555-aea1299b8a3f
+"
+1592513080200,"{""name"":""db_access_Logger"",""Items"":[{""mood"":""smile"",""pntId"":""bb269d0d-a2b9-4e66-a555-aea1299b8a3f"",""createdDt"":""Thu Jun 18 2020 14:01:17"",""thought"":""But what I like to do the most is play golf. Golf all day and all night."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/083e8f3d-0723-4915-95bf-c9a45e1e290c""}],""Count"":1,""ScannedCount"":1,""level"":""info"",""message"":""getPnT Q Result""}
+"
+1592513080200,"{""name"":""db_access_Logger"",""mood"":""smile"",""pntId"":""bb269d0d-a2b9-4e66-a555-aea1299b8a3f"",""createdDt"":""Thu Jun 18 2020 14:01:17"",""thought"":""But what I like to do the most is play golf. Golf all day and all night."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/083e8f3d-0723-4915-95bf-c9a45e1e290c"",""level"":""info"",""message"":""Item: ""}
+"
+1592513080201,"2020-06-18T20:44:40.201Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Get PnT:  {
+  mood: 'smile',
+  pntId: 'bb269d0d-a2b9-4e66-a555-aea1299b8a3f',
+  createdDt: 'Thu Jun 18 2020 14:01:17',
+  thought: 'But what I like to do the most is play golf. Golf all day and all night.',
+  userId: 'google-oauth2|108861580645825457338',
+  attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/083e8f3d-0723-4915-95bf-c9a45e1e290c'
+}
+"
+1592513080201,"2020-06-18T20:44:40.201Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Key:  google-oauth2|108861580645825457338 Thu Jun 18 2020 14:01:17
+"
+1592513080245,"2020-06-18T20:44:40.245Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Ok  {}
+"
+1592513080245,"2020-06-18T20:44:40.245Z	2a21006d-2a18-483f-b379-75bc8d84ccc6	INFO	Success 200
+"
+1592513080247,"END RequestId: 2a21006d-2a18-483f-b379-75bc8d84ccc6
+"
+1592513080247,"REPORT RequestId: 2a21006d-2a18-483f-b379-75bc8d84ccc6	Duration: 151.55 ms	Billed Duration: 200 ms	Memory Size: 1024 MB	Max Memory Used: 150 MB	
+"
+1592513081933,"START RequestId: c68ad324-e87a-45e4-88e6-b8ed328e6db2 Version: $LATEST
+"
+1592513081936,"2020-06-18T20:44:41.936Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	deletePnT fxn
+"
+1592513081937,"{""name"":""deletePicNThought"",""resource"":""/pnts/{pntId}"",""path"":""/pnts/ffdd64e3-a14b-46ab-bc37-145c76fe44a6"",""httpMethod"":""DELETE"",""headers"":{""Accept"":""application/json, text/plain, */*"",""Accept-Encoding"":""br, gzip, deflate"",""Accept-Language"":""en-us"",""Authorization"":""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA"",""CloudFront-Forwarded-Proto"":""https"",""CloudFront-Is-Desktop-Viewer"":""true"",""CloudFront-Is-Mobile-Viewer"":""false"",""CloudFront-Is-SmartTV-Viewer"":""false"",""CloudFront-Is-Tablet-Viewer"":""false"",""CloudFront-Viewer-Country"":""US"",""Host"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""origin"":""http://localhost:3000"",""Referer"":""http://localhost:3000/"",""User-Agent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""Via"":""2.0 0eb7067b04b6581a3cac621dac7ab959.cloudfront.net (CloudFront)"",""X-Amz-Cf-Id"":""iFV17I5LFrZKz65TSGLKQYXY0BGU3TM2fiHWgffvED6NWI4J0keSEA=="",""X-Amzn-Trace-Id"":""Root=1-5eebd239-4d838a6a85681f1407a7f556"",""X-Forwarded-For"":""71.156.79.242, 64.252.128.131"",""X-Forwarded-Port"":""443"",""X-Forwarded-Proto"":""https""},""multiValueHeaders"":{""Accept"":[""application/json, text/plain, */*""],""Accept-Encoding"":[""br, gzip, deflate""],""Accept-Language"":[""en-us""],""Authorization"":[""Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkkxaF9ETVAwX1A4QjBXb1VsQnBjSCJ9.eyJpc3MiOiJodHRwczovL2Rldi13bWJ4ZzZ5MC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg4NjE1ODA2NDU4MjU0NTczMzgiLCJhdWQiOiJyY2lYYUxFUWdaTVlWTXNRNDlXcUNzMGRzbTFvWDFPTyIsImlhdCI6MTU5MjUxMjk2NiwiZXhwIjoxNTkyNTQ4OTY2LCJhdF9oYXNoIjoibU5rcGsxdnlYVUxVLW0wVE9JblVGUSIsIm5vbmNlIjoiSnFTaWw2RDdLUWEwZDFISDhKYXlIWXQ1WVVDMFUubloifQ.UQB_yMBz5eiTBDlad4J8HheU9OhnM5qq2qSeHFRe9SKkUF38_H3mq5Q3LQkxy2R-TNBagFp9LsG1dCgzZMxIMggXux-NGHUbvIKrYEt7koXiruyZxjIWsJKOeKUQxe9h0F-88vd7DKPPZBUTUexXKfE-M1OqvhoRNIbDYny7Ez2Nu3nBVkaG-MLt4Jy6OYXh-Jt6I7zJr4uWxMl1_1A519LlXQohUQrcqOFWj0cSPi7ZvekezMcDfILwyuvO3PQ4PROhS2qgronEFZvLvmXzBy5NoorHpxw1_QgKPIkc8ERVpE5pK-XkGJLlf728SU4b2UahMXT8BTrzxo26FjPHUA""],""CloudFront-Forwarded-Proto"":[""https""],""CloudFront-Is-Desktop-Viewer"":[""true""],""CloudFront-Is-Mobile-Viewer"":[""false""],""CloudFront-Is-SmartTV-Viewer"":[""false""],""CloudFront-Is-Tablet-Viewer"":[""false""],""CloudFront-Viewer-Country"":[""US""],""Host"":[""xc5w3qglll.execute-api.us-east-1.amazonaws.com""],""origin"":[""http://localhost:3000""],""Referer"":[""http://localhost:3000/""],""User-Agent"":[""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15""],""Via"":[""2.0 0eb7067b04b6581a3cac621dac7ab959.cloudfront.net (CloudFront)""],""X-Amz-Cf-Id"":[""iFV17I5LFrZKz65TSGLKQYXY0BGU3TM2fiHWgffvED6NWI4J0keSEA==""],""X-Amzn-Trace-Id"":[""Root=1-5eebd239-4d838a6a85681f1407a7f556""],""X-Forwarded-For"":[""71.156.79.242, 64.252.128.131""],""X-Forwarded-Port"":[""443""],""X-Forwarded-Proto"":[""https""]},""queryStringParameters"":null,""multiValueQueryStringParameters"":null,""pathParameters"":{""pntId"":""ffdd64e3-a14b-46ab-bc37-145c76fe44a6""},""stageVariables"":null,""requestContext"":{""resourceId"":""a0hlv9"",""authorizer"":{""principalId"":""google-oauth2|108861580645825457338"",""integrationLatency"":0},""resourcePath"":""/pnts/{pntId}"",""httpMethod"":""DELETE"",""extendedRequestId"":""OV3JEGb7IAMFbEw="",""requestTime"":""18/Jun/2020:20:44:41 +0000"",""path"":""/dev/pnts/ffdd64e3-a14b-46ab-bc37-145c76fe44a6"",""accountId"":""234180911028"",""protocol"":""HTTP/1.1"",""stage"":""dev"",""domainPrefix"":""xc5w3qglll"",""requestTimeEpoch"":1592513081918,""requestId"":""e70e2258-ce76-4a04-92bd-46f81fbeed62"",""identity"":{""cognitoIdentityPoolId"":null,""accountId"":null,""cognitoIdentityId"":null,""caller"":null,""sourceIp"":""71.156.79.242"",""principalOrgId"":null,""accessKey"":null,""cognitoAuthenticationType"":null,""cognitoAuthenticationProvider"":null,""userArn"":null,""userAgent"":""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15"",""user"":null},""domainName"":""xc5w3qglll.execute-api.us-east-1.amazonaws.com"",""apiId"":""xc5w3qglll""},""body"":null,""isBase64Encoded"":false,""level"":""info"",""message"":""Event: ""}
+"
+1592513081937,"2020-06-18T20:44:41.937Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	UserId:  google-oauth2|108861580645825457338
+"
+1592513081937,"2020-06-18T20:44:41.937Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	db_access.getPnT
+"
+1592513081937,"2020-06-18T20:44:41.937Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Delete Pic-N-Thought:  ffdd64e3-a14b-46ab-bc37-145c76fe44a6
+"
+1592513081937,"2020-06-18T20:44:41.937Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Query Pic-N-Thought
+"
+1592513081937,"2020-06-18T20:44:41.937Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	db_access.getPnT
+"
+1592513081937,"2020-06-18T20:44:41.937Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Query Todo filter by pntId:  ffdd64e3-a14b-46ab-bc37-145c76fe44a6
+"
+1592513081937,"2020-06-18T20:44:41.937Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Key:  google-oauth2|108861580645825457338 ffdd64e3-a14b-46ab-bc37-145c76fe44a6
+"
+1592513082000,"{""name"":""db_access_Logger"",""Items"":[{""mood"":""smile"",""pntId"":""ffdd64e3-a14b-46ab-bc37-145c76fe44a6"",""createdDt"":""Thu Jun 18 2020 14:00:00"",""thought"":""I like the sounds of good jazz guitar. I'd like to learn to play."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/bb498ade-da95-4aab-8c15-5150530a6176""}],""Count"":1,""ScannedCount"":1,""level"":""info"",""message"":""getPnT Q Result""}
+"
+1592513082015,"{""name"":""db_access_Logger"",""mood"":""smile"",""pntId"":""ffdd64e3-a14b-46ab-bc37-145c76fe44a6"",""createdDt"":""Thu Jun 18 2020 14:00:00"",""thought"":""I like the sounds of good jazz guitar. I'd like to learn to play."",""userId"":""google-oauth2|108861580645825457338"",""attachmentUrl"":""https://pic-n-thought-bucket-dev.s3.amazonaws.com/bb498ade-da95-4aab-8c15-5150530a6176"",""level"":""info"",""message"":""Item: ""}
+"
+1592513082015,"2020-06-18T20:44:42.015Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Get PnT:  {
+  mood: 'smile',
+  pntId: 'ffdd64e3-a14b-46ab-bc37-145c76fe44a6',
+  createdDt: 'Thu Jun 18 2020 14:00:00',
+  thought: ""I like the sounds of good jazz guitar. I'd like to learn to play."",
+  userId: 'google-oauth2|108861580645825457338',
+  attachmentUrl: 'https://pic-n-thought-bucket-dev.s3.amazonaws.com/bb498ade-da95-4aab-8c15-5150530a6176'
+}
+"
+1592513082015,"2020-06-18T20:44:42.015Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Key:  google-oauth2|108861580645825457338 Thu Jun 18 2020 14:00:00
+"
+1592513082043,"2020-06-18T20:44:42.043Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Ok  {}
+"
+1592513082043,"2020-06-18T20:44:42.043Z	c68ad324-e87a-45e4-88e6-b8ed328e6db2	INFO	Success 200
+"
+1592513082044,"END RequestId: c68ad324-e87a-45e4-88e6-b8ed328e6db2
+"
+1592513082044,"REPORT RequestId: c68ad324-e87a-45e4-88e6-b8ed328e6db2	Duration: 107.75 ms	Billed Duration: 200 ms	Memory Size: 1024 MB	Max Memory Used: 150 MB	
+"
